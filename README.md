@@ -50,8 +50,6 @@ Unlike streaming apps, MCM provides advanced offline tools such as detailed meta
 - Dark mode primary with vibrant accent colors
 - Font/typography: readable, minimal
 
----
-
 ## Main Features
 
 ### Music Management
@@ -77,8 +75,6 @@ Unlike streaming apps, MCM provides advanced offline tools such as detailed meta
 - Full offline mode
 - Backup and restore music library
 - Export metadata to CSV or SQL
-
----
 
 ## What I Learned
 
