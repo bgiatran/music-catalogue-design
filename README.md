@@ -1,95 +1,107 @@
-# README: Music Collection Manager (MCM)
+# Music Catalogue Design
 
-**Music Collection Manager (MCM)** is an offline desktop application built for DJs, music producers, and enthusiasts to efficiently organize, search, and analyze large personal music libraries.
+A complete system design and prototype for managing and exploring music catalogs based on **genre, mood, BPM, and region**. Built with DJs, producers, and music explorers in mind, this project combines relational database architecture, wireframing, and search/filter system logic into a cohesive offline-ready platform.
 
-Unlike streaming apps, MCM provides advanced offline tools such as detailed metadata entry, similarity analysis, and intelligent filtering — ideal for professional and live settings.
+Unlike streaming services, this design emphasizes **metadata precision**, **offline control**, and **smart discovery tools** for professionals working with personal music libraries.
 
-## Core Objectives
+Developed for the *Application Programming* course, this project includes an **ERD**, **normalized schema**, **SQL scripts**, **interface wireframes**, and system flow documentation to demonstrate scalable system design and practical backend engineering.
 
-- Build an intuitive app to manage local music libraries
-- Provide advanced search/filter functionality with metadata
-- Implement BPM, key, and mood-based song matching
-- Allow customizable playlist creation
-- Operate entirely offline with data export/import features
+---
 
-## Tools & Technologies Used
+## Purpose
 
-- **Backend Language**: Python  
-- **Database**: SQL (PostgreSQL/MySQL with ERD & schema design)  
-- **Interface Design**: Wireframes, mood boards, navigation diagrams  
-- **Data Handling**: SQLite/CSV integration for local storage  
-- **ERD Design Tool**: LucidChart 
-- **Wireframing Tools**: Balsamiq
+In a growing world of digital music, there’s a clear need for tools that enable **offline-first, metadata-driven music organization**. DJs and producers often work with massive personal libraries that require:
 
-## Key Components
+- Clean, flexible database structures
+- Advanced discovery and filtering tools
+- Region/mood/BPM-aware sorting for set building and inspiration
+- Tools that don't depend on internet access or streaming services
 
-### 1. ERD & Database Schema
-- Tables for: `Songs`, `Artists`, `Albums`, `Playlists`, `Genres`, `Tags`
-- One-to-many and many-to-many relationships
-- Normalized schema with indexes for fast queries
+This project simulates the backend system of such a platform — combining application programming, systems design, and UX wireframing into one cohesive artifact.
 
-### 2. SQL Scripts
-- Table creation scripts
-- Sample inserts and bulk data loading
-- Stored procedures for advanced filters (e.g., songs by BPM + key)
-- Backup/restore procedures
+---
 
-### 3. Wireframes & Interface Design
-- Home screen layout with playlist and filter panels
-- Add/Edit Track screen
-- Playlist builder interface
-- Dark/Light mode toggle
-- Drag-and-drop support for songs in playlists
+## Core Features
 
-### 4. Navigational Diagrams
-- User flow from launching app → editing track → building playlist
-- Diagrams include error handling and user feedback loops
+### Database Design
+- Fully normalized relational schema in 3NF
+- Entity Relationship Diagram (ERD) designed in Lucidchart
+- Many-to-many link tables for genres, moods, and tags
+- Indexed for efficient lookup and filtering
 
-### 5. Mood Boards
-- Aesthetic inspiration: clean, modern, tech + analog DJ feel
-- Dark mode primary with vibrant accent colors
-- Font/typography: readable, minimal
+### SQL Functionality
+- SQL scripts for table creation, test inserts, and advanced queries
+- Stored procedures for mood + BPM matching and key similarity
+- Backup and restore logic
+- Multi-criteria filter queries (e.g., BPM + region + genre)
 
-## Main Features
+### Metadata Management
+- Support for detailed metadata: title, artist, album, genre, year, BPM, key, tags, region
+- Region table with continent → country mapping
+- Tag system for moods, events, and themes
 
-### Music Management
-- Add/edit/delete songs, albums, and artists
-- Assign detailed metadata: Title, Artist, Album, Genre, Year, BPM, Key, Tags
+### UI & Experience Design
+- Wireframes for desktop app layout: filterable library, playlist builder, edit screens
+- Mood boards for visual consistency and aesthetic design
+- Navigation diagrams for end-to-end user flow
 
-### Advanced Search & Filters
-- Multi-criteria filtering (e.g., genre + BPM range + tag)
-- Smart search suggestions
-- Cross-genre discovery tools
+---
 
-### Similar Song Matching
-- Match by BPM and musical key
-- Filter by energy, vocal tone, instrumentation
-- Recommend mixable tracks
+##  System Artifacts
 
-### Playlists & Tagging
-- Build dynamic and static playlists
-- Tag system for moods, events, or performance themes
-- View by tag cloud or timeline
+- ![ERD Diagram](./images/erd-diagram.png)
+- ![Wireframe UI](./images/wireframe-ui.png)
+- ![User Flow](./images/user-flow-diagram.png)
 
-### Data & Backup
-- Full offline mode
-- Backup and restore music library
-- Export metadata to CSV or SQL
+---
 
 ## What I Learned
 
 ### Technical Skills
-- How to design normalized databases and create ERDs
-- Writing efficient SQL queries, joins, and stored procedures
-- Building GUI apps using Python
-- Structuring user-friendly interfaces based on UX principles
+- Designing normalized SQL databases with complex relationships
+- Writing joins and stored procedures to simulate real-world discovery tools
+- Working with SQLite and CSV for local storage
+- Implementing application logic through SQL alone, without a full frontend
 
-### Design & UX
-- Creating wireframes and mood boards from scratch
-- Mapping user journeys and designing accessible interfaces
-- Balancing simplicity with power in feature design
+### UX & Product Thinking
+- Creating wireframes and mood boards aligned with DJ/producer workflows
+- Mapping out intuitive user journeys with actionable navigation states
+- Balancing technical depth with user accessibility
 
 ### Problem Solving
-- Translating complex music metadata into usable database structures
-- Creating efficient filters that don’t overwhelm users
-- Managing local app state without a cloud backend
+- Translating musical properties (e.g., mood, BPM, key) into relational models
+- Designing filters that feel powerful but stay performant
+- **Overcoming SQL learning curve**: one major challenge was getting used to JOIN logic — particularly distinguishing between INNER, LEFT, and OUTER joins, and debugging missing or mismatched records
+
+---
+
+## Tech Stack
+
+| Layer              | Technology           |
+|-------------------|----------------------|
+| Backend Language   | Python (for future expansion) |
+| Database           | SQL (PostgreSQL / MySQL / SQLite) |
+| Storage Format     | CSV (import/export support) |
+| Design Tools       | Lucidchart, Balsamiq, Figma |
+| Data Interaction   | SQL scripts, stored procedures |
+| Interface Design   | Wireframes, Mood Boards |
+
+---
+
+## Challenges Faced
+
+- Designing **multi-tag systems** for mood and genre without losing performance
+- Understanding **complex JOIN logic** and how to filter across multiple criteria
+- Creating a discovery-focused system without relying on frontend interactivity
+- Balancing normalization with usability for actual filtering and playlist creation
+
+---
+
+## Future Improvements
+
+- Build a **Streamlit** or **desktop GUI** app to interact with the schema
+- Connect to live metadata APIs (Spotify, Last.fm, MusicBrainz)
+- Add full-text search (e.g., lyrics, descriptions)
+- ML-based recommendation features (clustering by mood, tempo, energy)
+- Creative UX additions: waveform visualization, color-coded key indicators
+- Smarter playlist creation via drag-and-drop and tag suggestions
