@@ -90,7 +90,7 @@ This diagram maps out user flow and screen relationships, including:
 - Edit and filter panels
 - Playlist creation screen
 
-[View Full PDF: Navigation Diagram](NavDiagram_Final.pdf)
+![Navigation](images/Screenshot%20(115).png) 
 
 > *An overview of how users move through the app interface.*
 
