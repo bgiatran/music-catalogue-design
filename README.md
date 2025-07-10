@@ -49,7 +49,7 @@ This project simulates the backend system of such a platform — combining appli
 
 ##  System Artifacts
 
-- ![ERD Diagram](./images/erd-diagram.png)
+![Entity Relationship Diagram](ERD%20Final.png)
 - ![Wireframe UI](./images/wireframe-ui.png)
 - ![User Flow](./images/user-flow-diagram.png)
 
