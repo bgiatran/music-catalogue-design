@@ -1,57 +1,109 @@
 # Music Catalogue Design
 
-A complete system design and prototype for managing and exploring music catalogs based on **genre, mood, BPM, and region**. Built with DJs, producers, and music explorers in mind, this project combines relational database architecture, wireframing, and search/filter system logic into a cohesive offline-ready platform.
+A complete system design and prototype for managing and exploring music catalogs based on **genre**, **mood**, **BPM**, and **region**. Built with DJs, producers, and music explorers in mind, this project blends relational database architecture, wireframing, and search/filter logic into a cohesive offline-ready platform.
 
-Unlike streaming services, this design emphasizes **metadata precision**, **offline control**, and **smart discovery tools** for professionals working with personal music libraries.
+Unlike streaming services, this tool emphasizes **metadata precision**, **offline control**, and **smart discovery workflows** for professionals working with large local music libraries.
 
-Developed for the *Application Programming* course, this project includes an **ERD**, **normalized schema**, **SQL scripts**, **interface wireframes**, and system flow documentation to demonstrate scalable system design and practical backend engineering.
+Developed for the **Application Programming** course, this project demonstrates scalable system design, SQL programming, and interface-level UX thinking through:
+
+- An ERD and normalized database schema
+- SQL scripts for real-world functionality
+- Wireframes, navigation diagrams, and mood boards for product design
+- System architecture and flow documentation
 
 ---
 
 ## Purpose
 
-In a growing world of digital music, there’s a clear need for tools that enable **offline-first, metadata-driven music organization**. DJs and producers often work with massive personal libraries that require:
+In the ever-growing world of digital music, there’s a clear need for **offline-first**, **metadata-driven** music management tools. DJs and producers often manage massive local libraries that require:
 
 - Clean, flexible database structures
 - Advanced discovery and filtering tools
 - Region/mood/BPM-aware sorting for set building and inspiration
-- Tools that don't depend on internet access or streaming services
+- Tools that don’t rely on internet access or streaming services
 
-This project simulates the backend system of such a platform — combining application programming, systems design, and UX wireframing into one cohesive artifact.
+This project simulates the backend and UI architecture of such a platform — combining application programming, systems design, and UX wireframing into a single cohesive artifact.
 
 ---
 
 ## Core Features
 
 ### Database Design
-- Fully normalized relational schema in 3NF
-- Entity Relationship Diagram (ERD) designed in Lucidchart
+- Fully normalized relational schema (3NF)
+- Designed using Lucidchart
 - Many-to-many link tables for genres, moods, and tags
 - Indexed for efficient lookup and filtering
 
 ### SQL Functionality
-- SQL scripts for table creation, test inserts, and advanced queries
-- Stored procedures for mood + BPM matching and key similarity
-- Backup and restore logic
-- Multi-criteria filter queries (e.g., BPM + region + genre)
+- Scripts for:
+  - Table creation and test data inserts
+  - Advanced multi-criteria filter queries (e.g., BPM + region + genre)
+  - Stored procedures for mood and key matching
+  - Backup and restore logic
 
 ### Metadata Management
-- Support for detailed metadata: title, artist, album, genre, year, BPM, key, tags, region
-- Region table with continent → country mapping
-- Tag system for moods, events, and themes
+- Track-level metadata: title, artist, album, genre, BPM, key, tags, year, region
+- Region table includes continent → country relationships
+- Tag system supports moods, events, themes
 
-### UI & Experience Design
-- Wireframes for desktop app layout: filterable library, playlist builder, edit screens
-- Mood boards for visual consistency and aesthetic design
-- Navigation diagrams for end-to-end user flow
+###  UI & Experience Design
+- Wireframes for a desktop-first app layout
+- Playlist builder and editable library views
+- Mood boards to guide aesthetic design
+- Navigation diagrams to capture end-to-end flow
 
 ---
 
-##  System Artifacts
+## 🗂System Artifacts
+
+### Entity Relationship Diagram (ERD)
+
+The ERD defines the underlying structure of the system’s data. Key relationships include:
+- `Artists`, `Albums`, and `Tracks`
+- Many-to-many tagging through junction tables (e.g., `Track_Genres`, `Track_Moods`)
+- Region mappings and mood-based filtering logic
 
 ![Entity Relationship Diagram](ERD%20Final.png)
-- ![Wireframe UI](./images/wireframe-ui.png)
-- ![User Flow](./images/user-flow-diagram.png)
+
+> *Visualizing the relational structure of the music catalogue system.*
+
+---
+
+### Navigation Diagram
+
+This diagram maps out user flow and screen relationships, including:
+- Library view
+- Track/album detail pages
+- Edit and filter panels
+- Playlist creation screen
+
+[View Full PDF: Navigation Diagram](NavDiagram_Final.pdf)
+
+> *An overview of how users move through the app interface.*
+
+---
+
+### Wireframe Screens
+
+Core wireframes include:
+- Main library grid (sortable/filterable)
+- Playlist builder screen
+- Detailed metadata editor view
+
+[📄 View Full PDF: Wire Diagram](WireDiagram_Final.pdf)
+
+> *Layout structure and component arrangement across core screens.*
+
+---
+
+### Mood Board
+
+This visual board guided the aesthetic direction, emphasizing:
+- Sleek dark-mode UI with clear hierarchy
+- Inspiration from Spotify, Notion, and music visualizers
+- Calm tones, rounded edges, and minimalist control panels
+
+_*(Image Placeholder: Add your mood board image here once finalized)*_
 
 ---
 
