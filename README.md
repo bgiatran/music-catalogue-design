@@ -54,7 +54,7 @@ This project simulates the backend and UI architecture of such a platform — co
 
 ---
 
-## 🗂System Artifacts
+## System Artifacts
 
 ### Entity Relationship Diagram (ERD)
 
@@ -66,6 +66,19 @@ The ERD defines the underlying structure of the system’s data. Key relationshi
 ![Entity Relationship Diagram](ERD%20Final.png)
 
 > *Visualizing the relational structure of the music catalogue system.*
+
+---
+
+### Normalized Schema Diagram
+
+This diagram illustrates how the raw ERD is transformed into a **normalized SQL schema** following 3NF principles. It includes:
+- Final table structures
+- Foreign key constraints
+- Reference integrity across the database
+
+![Normalized Schema](schema_diagram.png)
+
+> *Final database schema reflecting normalized table design.*
 
 ---
 
@@ -90,7 +103,7 @@ Core wireframes include:
 - Playlist builder screen
 - Detailed metadata editor view
 
-[📄 View Full PDF: Wire Diagram](WireDiagram_Final.pdf)
+[View Full PDF: Wire Diagram](WireDiagram_Final.pdf)
 
 > *Layout structure and component arrangement across core screens.*
 
@@ -104,6 +117,36 @@ This visual board guided the aesthetic direction, emphasizing:
 - Calm tones, rounded edges, and minimalist control panels
 
 _*(Image Placeholder: Add your mood board image here once finalized)*_
+
+---
+
+### Test Plan & Sample Data Document
+
+This document outlines how functionality was validated using sample datasets and test queries:
+
+- Sample inserts for tracks, albums, and tags  
+- Validations for foreign key constraints and multi-table queries  
+- Test cases for filtering by BPM, region, and mood  
+
+[View Test Plan Document](Test_Document.pdf)
+
+> *Simulating real-world use cases with test data and edge conditions.*
+
+---
+
+### SQL Scripts
+
+This folder includes SQL code written for this project:
+
+- `schema.sql`: Table creation and schema definition  
+- `test_data.sql`: Sample inserts for development  
+- `queries.sql`: Discovery filters, mood matching, and utility joins  
+- `procedures.sql`: Stored procedures for advanced logic  
+- `backup_restore.sql`: Export/import templates for local use  
+
+[View SQL Scripts Folder](sql/)
+
+> *Core database logic driving the music discovery platform.*
 
 ---
 
