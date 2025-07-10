@@ -76,7 +76,8 @@ This diagram illustrates how the raw ERD is transformed into a **normalized SQL 
 - Foreign key constraints
 - Reference integrity across the database
 
-![Normalized Schema](schema_diagram.png)
+![Normalized Schema](images/Screenshot%20(122).png) 
+![Normalized Schema](images/Screenshot%20(123).png) 
 
 > *Final database schema reflecting normalized table design.*
 
@@ -128,23 +129,21 @@ This document outlines how functionality was validated using sample datasets and
 - Validations for foreign key constraints and multi-table queries  
 - Test cases for filtering by BPM, region, and mood  
 
-[View Test Plan Document](Test_Document.pdf)
+![Normalized Schema](images/Screenshot%20(116).png) 
+![Normalized Schema](images/Screenshot%20(117).png) 
+![Normalized Schema](images/Screenshot%20(118).png) 
 
 > *Simulating real-world use cases with test data and edge conditions.*
 
 ---
 
-### SQL Scripts
+### SQL Script
 
-This folder includes SQL code written for this project:
+Includes SQL code written for this project:
 
-- `schema.sql`: Table creation and schema definition  
-- `test_data.sql`: Sample inserts for development  
-- `queries.sql`: Discovery filters, mood matching, and utility joins  
-- `procedures.sql`: Stored procedures for advanced logic  
-- `backup_restore.sql`: Export/import templates for local use  
-
-[View SQL Scripts Folder](sql/)
+![Normalized Schema](images/Screenshot%20(119).png) 
+![Normalized Schema](images/Screenshot%20(120).png) 
+![Normalized Schema](images/Screenshot%20(121).png) 
 
 > *Core database logic driving the music discovery platform.*
 
