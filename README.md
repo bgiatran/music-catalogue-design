@@ -116,7 +116,7 @@ This visual board guided the aesthetic direction, emphasizing:
 - Inspiration from Spotify, Notion, and music visualizers
 - Calm tones, rounded edges, and minimalist control panels
 
-_*(Image Placeholder: Add your mood board image here once finalized)*_
+![Moodboard](Final_Mood%20Board.jpg) 
 
 ---
 
