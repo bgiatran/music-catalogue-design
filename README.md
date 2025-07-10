@@ -103,7 +103,7 @@ Core wireframes include:
 - Playlist builder screen
 - Detailed metadata editor view
 
-[View Full PDF: Wire Diagram](WireDiagram_Final.pdf)
+![Wireframe](images/WireDigram_Final%20(1)_page-0001.jpg)
 
 > *Layout structure and component arrangement across core screens.*
 
